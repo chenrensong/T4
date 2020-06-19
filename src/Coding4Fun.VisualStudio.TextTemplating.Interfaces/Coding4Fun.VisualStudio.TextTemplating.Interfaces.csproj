@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props" />
+  <PropertyGroup>
+    <Description>Coding4Fun.VisualStudio.TextTemplating.Interfaces</Description>
+    <AssemblyName>Coding4Fun.VisualStudio.TextTemplating.Interfaces</AssemblyName>
+    <Title>$(AssemblyName)</Title>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>  
+
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="4.7.0" />
+    <PackageReference Include="System.Composition.AttributedModel" Version="1.4.1" />
+  </ItemGroup>
+
+</Project>

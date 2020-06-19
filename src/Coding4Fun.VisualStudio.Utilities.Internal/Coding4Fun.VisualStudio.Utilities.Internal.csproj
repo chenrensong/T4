@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <Import Project="..\..\common.props" />
+  <PropertyGroup>
+    <Description>Coding4Fun.VisualStudio.Utilities.Internal</Description>
+    <AssemblyName>Coding4Fun.VisualStudio.Utilities.Internal</AssemblyName>
+    <Title>$(AssemblyName)</Title>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>

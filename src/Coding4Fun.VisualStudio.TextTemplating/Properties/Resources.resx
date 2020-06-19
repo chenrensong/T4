@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Coding4Fun ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssemblyLoadError" xml:space="preserve">
+    <value>There was a problem loading the assembly '{0}'</value>
+  </data>
+  <data name="AutoGenCommentLine1" xml:space="preserve">
+    <value>This code was generated by a tool.</value>
+  </data>
+  <data name="AutoGenCommentLine2" xml:space="preserve">
+    <value>Runtime Version: {0}</value>
+  </data>
+  <data name="AutoGenCommentLine3" xml:space="preserve">
+    <value>Changes to this file may cause incorrect behavior and will be lost if</value>
+  </data>
+  <data name="AutoGenCommentLine4" xml:space="preserve">
+    <value>the code is regenerated.</value>
+  </data>
+  <data name="BaseClassNotFound" xml:space="preserve">
+    <value>Failed to load base class '{0}' from which Transformation class inherits.</value>
+  </data>
+  <data name="BlankIncludeFile" xml:space="preserve">
+    <value>Loading the include file '{0}' returned a null or empty string. The transformation will not be run. </value>
+  </data>
+  <data name="CannotInitializeProcessor" xml:space="preserve">
+    <value>There was a problem creating and initializing the processor for a directive named '{1}'. The type of the processor is {0}. The transformation will not be run. </value>
+  </data>
+  <data name="CannotResolveRequiresParameter" xml:space="preserve">
+    <value>Unable to resolve a value for the requires parameter '{0}' for directive '{1}'.</value>
+  </data>
+  <data name="CompilerErrorPrepend" xml:space="preserve">
+    <value>Compiling transformation: </value>
+  </data>
+  <data name="CompilerErrors" xml:space="preserve">
+    <value>An exception was thrown while trying to compile the transformation code.</value>
+  </data>
+  <data name="CompilerVersionNotSupported" xml:space="preserve">
+    <value>The {0} 2.0 and {0} 3.5 compilers are no longer supported. Templates will always be compiled with the version 4 compiler instead of '{1}' as specified.</value>
+  </data>
+  <data name="DirectiveMissingArgument" xml:space="preserve">
+    <value>'{0}' directive did not provide required argument '{1}'.</value>
+  </data>
+  <data name="DirectiveNotSupported" xml:space="preserve">
+    <value>The directive '{0}' is not supported.</value>
+  </data>
+  <data name="DuplicateDirectiveParameter" xml:space="preserve">
+    <value>The parameter '{0}' already exists in the directive. The duplicate parameter will be ignored.</value>
+  </data>
+  <data name="EncodingIntegerFailed" xml:space="preserve">
+    <value>Encoding.GetEncoding(int) failed for '{0}'.</value>
+  </data>
+  <data name="EncodingStringFailed" xml:space="preserve">
+    <value>Encoding.GetEncoding(string) failed for '{0}'.</value>
+  </data>
+  <data name="ErrorGeneratingTranformationClass" xml:space="preserve">
+    <value>There was an error generating the transformation class. The process cannot continue. </value>
+  </data>
+  <data name="ErrorInitializingTransformationObject" xml:space="preserve">
+    <value>Errors were generated when initializing the transformation object. The transformation will not be run. </value>
+  </data>
+  <data name="ErrorLoadingIncludeFile" xml:space="preserve">
+    <value>There was an error loading the include file '{0}'. The transformation will not be run.</value>
+  </data>
+  <data name="ErrorOutput" xml:space="preserve">
+    <value>ErrorGeneratingOutput</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value> The following Exception was thrown:
+{0}</value>
+  </data>
+  <data name="ExceptionGettingProcessorOutput" xml:space="preserve">
+    <value>An Exception was thrown while trying to get the output from the processor named '{0}'. The transformation will not be run.</value>
+  </data>
+  <data name="ExceptionGettingReferencesFromDP" xml:space="preserve">
+    <value>An Exception was thrown while trying to get the namespace imports and assembly references for processing the run from a directive processor named '{0}'. The transformation will not be run.</value>
+  </data>
+  <data name="ExceptionGettingStandardReferences" xml:space="preserve">
+    <value>An exception was thrown by the host when trying to get the StandardImports and StandardAssemblyReferences. The transformation will not be run.</value>
+  </data>
+  <data name="ExceptionInstantiatingTransformationObject" xml:space="preserve">
+    <value>Could not instantiate a TextTransformation object from the compiled assembly.</value>
+  </data>
+  <data name="ExceptionProcessingDirective" xml:space="preserve">
+    <value>An Exception was thrown while processing a directive named '{0}'. The transformation will not be run. </value>
+  </data>
+  <data name="ExceptionProcessingTemplate" xml:space="preserve">
+    <value>An Exception was thrown while processing the template. </value>
+  </data>
+  <data name="ExceptionResolvingAssembly" xml:space="preserve">
+    <value>The host threw an exception while trying to resolve the assembly reference '{0}'. The transformation will not be run.</value>
+  </data>
+  <data name="ExceptionRunningTransformText" xml:space="preserve">
+    <value>An exception was thrown while running the TransformText() method. </value>
+  </data>
+  <data name="ExceptionSettingExtension" xml:space="preserve">
+    <value>An exception was thrown by the host while trying to set the extension.</value>
+  </data>
+  <data name="ExceptionSettingHost" xml:space="preserve">
+    <value>An exception was thrown while trying to set the 'Host' property on the {0}. </value>
+  </data>
+  <data name="ExceptionSettingSession" xml:space="preserve">
+    <value>An exception was thrown while trying to set the 'Session' property on the {0}. </value>
+  </data>
+  <data name="ExceptionWhileRunningCode" xml:space="preserve">
+    <value>An Exception was thrown while running the transformation code. The process cannot continue. </value>
+  </data>
+  <data name="ExpressionBlockNull" xml:space="preserve">
+    <value>An expression block evaluated as Null</value>
+  </data>
+  <data name="FileNotFoundExceptionProcessingDirective" xml:space="preserve">
+    <value>The file {0} was not found whilst processing a directive named '{1}'. </value>
+  </data>
+  <data name="GetClassCodeCallError" xml:space="preserve">
+    <value>Class code can only be retrieved after FinishProcessingRun() is called</value>
+  </data>
+  <data name="GetImportsCallError" xml:space="preserve">
+    <value>Imports can only be retrieved after FinishProcessingRun() is called</value>
+  </data>
+  <data name="GetReferencesCallError" xml:space="preserve">
+    <value>References can only be retrieved after FinishProcessingRun() is called</value>
+  </data>
+  <data name="HostPropertyNotFound" xml:space="preserve">
+    <value>A 'Host' property was not found despite the template directive setting hostspecific='truefrombase'. Check that the base class '{0}' has a 'Host' property.</value>
+  </data>
+  <data name="IncorrectDPType" xml:space="preserve">
+    <value>The type '{0}' of the directive processor named '{1}' does not implement Coding4Fun.VisualStudio.TextTemplating.IDirectiveProcessor. The transformation will not be run.</value>
+  </data>
+  <data name="InvalidBaseClass" xml:space="preserve">
+    <value>An invalid base class was specified for the Transformation class. The base class must implement the same members as Coding4Fun.VisualStudio.TextTemplating.TextTransformation.</value>
+  </data>
+  <data name="InvalidCompilerOption" xml:space="preserve">
+    <value>The compiler option is invalid: '{0}'.</value>
+  </data>
+  <data name="InvalidCulture" xml:space="preserve">
+    <value>An invalid culture was specified in the 'template' directive. The culture must be in the "xx-XX" format. The invariant culture will be used.</value>
+  </data>
+  <data name="InvalidDebugParam" xml:space="preserve">
+    <value>An invalid debug value '{0}' was specified in the template directive. The debug value must be either "true" or "false". The default of "false" will be used.</value>
+  </data>
+  <data name="InvalidDirectiveArgumentFormat" xml:space="preserve">
+    <value>Directive arguments should be of form 'name=value': {0}.</value>
+  </data>
+  <data name="InvalidHostSpecificParam" xml:space="preserve">
+    <value>An invalid HostSpecific value '{0}' was specified in the template directive. The HostSpecific value must be either "true", "false" or "truefrombase". The default of "false" will be used.</value>
+  </data>
+  <data name="InvalidLanguage" xml:space="preserve">
+    <value>An invalid language '{0}' was specified in the 'template' directive. The language must be either "C#" or "VB". The default value of "C#" will be used.</value>
+  </data>
+  <data name="InvalidLinePragmasParam" xml:space="preserve">
+    <value>An invalid linePragmas value '{0}' was specified in the template directive. The value must be either "true" or "false". The default of "true" will be used.</value>
+  </data>
+  <data name="InvalidNeutralCulture" xml:space="preserve">
+    <value>A neutral culture was specified in the 'template' directive. A specific culture must be provided. The invariant culture will be used.</value>
+  </data>
+  <data name="InvalidVisibility" xml:space="preserve">
+    <value>An invalid visibility '{0}' was specified in the 'template' directive. The visibility must be either 'internal' or 'public'. The default value of 'public' will be used.</value>
+  </data>
+  <data name="MissingBaseClass" xml:space="preserve">
+    <value>A template that specifies hostspecific='truefrombase' must also specify a base template with the 'inherits' parameter to the template directive.</value>
+  </data>
+  <data name="MultipleOutputDirectives" xml:space="preserve">
+    <value>Multiple output directives were found in the template. All but the first one will be ignored.</value>
+  </data>
+  <data name="MultipleTemplateDirectives" xml:space="preserve">
+    <value>Multiple template directives were found in the template. All but the first one will be ignored. Multiple parameters to the template directive should be specified within one template directive.</value>
+  </data>
+  <data name="NoAppDomain" xml:space="preserve">
+    <value>There was a problem getting an AppDomain to run the transformation from the host. The process cannot continue. </value>
+  </data>
+  <data name="NoProcessorForDirective" xml:space="preserve">
+    <value>No processor was specified for a directive named '{0}'. The transformation will not be run.</value>
+  </data>
+  <data name="NoProcessorTypeForDirective" xml:space="preserve">
+    <value>A processor named '{0}' could not be found for the directive named '{1}'. The transformation will not be run. </value>
+  </data>
+  <data name="NotEnoughDirectiveParameters" xml:space="preserve">
+    <value>A required parameter '{0}' for the directive '{1}' was not found. The directive will be ignored. </value>
+  </data>
+  <data name="ParameterDirectiveTypeMismatch" xml:space="preserve">
+    <value>The type '{1}' of the parameter '{0}' did not match the type of the data passed to the template.</value>
+  </data>
+  <data name="ProcessDirectiveCallError" xml:space="preserve">
+    <value>ProcessDirective() was called before StartProcessingRun(). Directive processing can only start after StartProcessingRun() is called. </value>
+  </data>
+  <data name="ProcessorNotSupportDirective" xml:space="preserve">
+    <value>The processor named '{0}' does not support the directive named '{1}'. The transformation will not be run.</value>
+  </data>
+  <data name="RecursiveInclude" xml:space="preserve">
+    <value>The include directive for file '{0}' causes an infinite loop. The directive will not be processed.</value>
+  </data>
+  <data name="SessionHostMarshalError" xml:space="preserve">
+    <value>Marshaling Session or Host object to secondary AppDomain failed. Check that Host and all types in Session dictionary are Serializable or derive from MarshalByReferenceObject.</value>
+  </data>
+  <data name="SetOutputEncodingFailed" xml:space="preserve">
+    <value>The host threw an exception from SetOutputEncoding().</value>
+  </data>
+  <data name="StartProcessingCallError" xml:space="preserve">
+    <value>StartProcessingRun() was called after directive processing was already started.</value>
+  </data>
+  <data name="TransformationErrorPrepend" xml:space="preserve">
+    <value>Running transformation: </value>
+  </data>
+  <data name="UnexpectedTag" xml:space="preserve">
+    <value>An unexpected start or end tag was found within a block. Make sure that you did not mis-type a start or end tag, and that you do not have any nested blocks in the template.</value>
+  </data>
+  <data name="UnsupportedArgumentValue" xml:space="preserve">
+    <value>Attempt to specify unsupported {1} value '{0}' for directive {2}</value>
+  </data>
+  <data name="WrongBlockSequence" xml:space="preserve">
+    <value>A {0} cannot appear after the first class feature in the template. Only boilerplate, expressions and other class features are allowed after the first class feature block.</value>
+  </data>
+  <data name="WrongDirectiveFormat" xml:space="preserve">
+    <value>A directive was specified in the wrong format. The transformation will not be run. Please specify the directive in the format &lt;#@ name [parameterName="parameterValue"]*  #&gt;</value>
+  </data>
+  <data name="WrongFinalBlockType" xml:space="preserve">
+    <value>A template containing a class feature must end with a class feature.</value>
+  </data>
+</root>

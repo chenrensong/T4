@@ -1,0 +1,35 @@
+<Project>
+  <Import Project=".\version.props" />
+  <PropertyGroup>
+    <Product>Coding4Fun.VisualStudio.TextTemplating.Core</Product>
+    <PackageId>$(ProjectName)</PackageId>
+    <Authors>Coding4Fun</Authors>
+    <Company>Coding4Fun</Company>
+    <Copyright>Copyright © Coding4Fun 2020</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>aspnetcore, mvc, mvvm, layui</PackageTags>
+    <PackageReleaseNotes>Coding4Fun</PackageReleaseNotes>
+    <IncludeSource>false</IncludeSource>
+    <MinClientVersion>4.1.0</MinClientVersion>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;1591;0809;1587;1570</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;1591;0809;1587;1570</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
