@@ -9,10 +9,9 @@
     <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageTags>aspnetcore, mvc, mvvm, layui</PackageTags>
+    <PackageTags>netcore,t4,template</PackageTags>
     <PackageReleaseNotes>Coding4Fun</PackageReleaseNotes>
     <IncludeSource>false</IncludeSource>
-    <MinClientVersion>4.1.0</MinClientVersion>
     <IncludeContentInPack>true</IncludeContentInPack>
     <NeutralLanguage>zh-CN</NeutralLanguage>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
