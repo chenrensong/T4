@@ -1,15 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <Import Project="..\..\common.props" />
-  <PropertyGroup>
-    <Description>Coding4Fun.VisualStudio.Utilities.Internal</Description>
-    <AssemblyName>Coding4Fun.VisualStudio.Utilities.Internal</AssemblyName>
-    <Title>$(AssemblyName)</Title>
-    <!--<UseWindowsForms>true</UseWindowsForms>-->
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
-    <PackageReference Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
-  </ItemGroup>
+	<Import Project="..\..\common.props" />
+	<PropertyGroup>
+		<Description>Coding4Fun.VisualStudio.Utilities.Internal</Description>
+		<AssemblyName>Coding4Fun.VisualStudio.Utilities.Internal</AssemblyName>
+		<Title>$(AssemblyName)</Title>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+		<PackageReference Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
+	</ItemGroup>
 </Project>

@@ -127,7 +127,9 @@ namespace Coding4Fun.VisualStudio.Telemetry
             Directory.CreateDirectory(Path.GetDirectoryName(path));
             using (FileStream fileStream = File.Open(path, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite))
             {
+#pragma warning disable SYSLIB0011 // 类型或成员已过时
                 new BinaryFormatter().Serialize(fileStream, JsonConvert.SerializeObject((object)store));
+#pragma warning restore SYSLIB0011 // 类型或成员已过时
                 if (fileStream.Position != fileStream.Length)
                 {
                     fileStream.SetLength(fileStream.Position);
@@ -190,7 +192,9 @@ namespace Coding4Fun.VisualStudio.Telemetry
                     using (FileStream serializationStream = File.Open(filepath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                     {
                         store = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
+#pragma warning disable SYSLIB0011 // 类型或成员已过时
                         string obj = (string)new BinaryFormatter().Deserialize(serializationStream);
+#pragma warning restore SYSLIB0011 // 类型或成员已过时
                         Dictionary<string, object> dictionary = store;
                         JsonSerializerSettings val = new JsonSerializerSettings();
                         val.DateParseHandling = ((DateParseHandling)0);

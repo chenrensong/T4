@@ -14,7 +14,7 @@
     <IncludeSource>false</IncludeSource>
     <IncludeContentInPack>true</IncludeContentInPack>
     <NeutralLanguage>zh-CN</NeutralLanguage>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

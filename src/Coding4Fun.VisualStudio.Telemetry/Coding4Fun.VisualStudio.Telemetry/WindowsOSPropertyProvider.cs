@@ -9,7 +9,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Threading;
-using System.Windows.Forms;
 
 namespace Coding4Fun.VisualStudio.Telemetry
 {
@@ -169,18 +168,18 @@ namespace Coding4Fun.VisualStudio.Telemetry
 					return;
 				}
 			}
-			bool highContrast = SystemInformation.HighContrast;
-			telemetryContext.PostProperty("VS.Core.OS.HighContrastId", highContrast);
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
-			string propertyValue = highContrast ? "HighContrastModeOn" : "HighContrastModeOff";
-			telemetryContext.PostProperty("VS.Core.OS.HighContrastName", propertyValue);
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
+			//bool highContrast = SystemInformation.HighContrast;
+			//telemetryContext.PostProperty("VS.Core.OS.HighContrastId", highContrast);
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
+			//string propertyValue = highContrast ? "HighContrastModeOn" : "HighContrastModeOff";
+			//telemetryContext.PostProperty("VS.Core.OS.HighContrastName", propertyValue);
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
 			telemetryContext.PostProperty("VS.Core.OS.Display.Dpi", displayInfo.Value.Dpi);
 			if (token.IsCancellationRequested)
 			{
@@ -191,41 +190,41 @@ namespace Coding4Fun.VisualStudio.Telemetry
 			{
 				return;
 			}
-			telemetryContext.PostProperty("VS.Core.OS.Display.Count", SystemInformation.MonitorCount);
+			//telemetryContext.PostProperty("VS.Core.OS.Display.Count", SystemInformation.MonitorCount);
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
+			//Size primaryMonitorSize = SystemInformation.PrimaryMonitorSize;
+			//telemetryContext.PostProperty("VS.Core.OS.Display.Resolution", primaryMonitorSize.Width * primaryMonitorSize.Height);
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
+			//Rectangle virtualScreen = SystemInformation.VirtualScreen;
+			//telemetryContext.PostProperty("VS.Core.OS.Display.XY", string.Format(CultureInfo.InvariantCulture, "{0}x{1}", new object[2]
+			//{
+			//	primaryMonitorSize.Width,
+			//	primaryMonitorSize.Height
+			//}));
 			if (token.IsCancellationRequested)
 			{
 				return;
 			}
-			Size primaryMonitorSize = SystemInformation.PrimaryMonitorSize;
-			telemetryContext.PostProperty("VS.Core.OS.Display.Resolution", primaryMonitorSize.Width * primaryMonitorSize.Height);
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
-			Rectangle virtualScreen = SystemInformation.VirtualScreen;
-			telemetryContext.PostProperty("VS.Core.OS.Display.XY", string.Format(CultureInfo.InvariantCulture, "{0}x{1}", new object[2]
-			{
-				primaryMonitorSize.Width,
-				primaryMonitorSize.Height
-			}));
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
-			telemetryContext.PostProperty("VS.Core.OS.Display.VirtualXY", string.Format(CultureInfo.InvariantCulture, "{0}x{1}", new object[2]
-			{
-				virtualScreen.Width,
-				virtualScreen.Height
-			}));
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
-			telemetryContext.PostProperty("VS.Core.OS.Display.ColorDepth", Screen.PrimaryScreen.BitsPerPixel);
-			if (token.IsCancellationRequested)
-			{
-				return;
-			}
+			//telemetryContext.PostProperty("VS.Core.OS.Display.VirtualXY", string.Format(CultureInfo.InvariantCulture, "{0}x{1}", new object[2]
+			//{
+			//	virtualScreen.Width,
+			//	virtualScreen.Height
+			//}));
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
+			//telemetryContext.PostProperty("VS.Core.OS.Display.ColorDepth", Screen.PrimaryScreen.BitsPerPixel);
+			//if (token.IsCancellationRequested)
+			//{
+			//	return;
+			//}
 			if (totalVolumesSize.Value.HasValue)
 			{
 				telemetryContext.PostProperty("VS.Core.OS.Drive.AllVolumesSize", totalVolumesSize.Value);

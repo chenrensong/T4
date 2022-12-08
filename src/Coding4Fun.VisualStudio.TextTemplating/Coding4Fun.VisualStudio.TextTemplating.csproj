@@ -1,44 +1,43 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <Import Project="..\..\common.props" />
-  <PropertyGroup>
-    <Description>Coding4Fun.VisualStudio.TextTemplating</Description>
-    <AssemblyName>Coding4Fun.VisualStudio.TextTemplating</AssemblyName>
-    <Title>$(AssemblyName)</Title>
-    <UseWindowsForms>true</UseWindowsForms>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+	<PropertyGroup>
+		<Description>Coding4Fun.VisualStudio.TextTemplating</Description>
+		<AssemblyName>Coding4Fun.VisualStudio.TextTemplating</AssemblyName>
+		<Title>$(AssemblyName)</Title>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
 
 
-  <ItemGroup>
-    <Compile Remove="AppDomain.cs" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="AppDomain.cs" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.9.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="5.0.0" />
-    <PackageReference Include="System.CodeDom" Version="5.0.0" />
-    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis" Version="4.4.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyModel" Version="7.0.0" />
+		<PackageReference Include="System.CodeDom" Version="7.0.0" />
+		<PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Coding4Fun.VisualStudio.Telemetry\Coding4Fun.VisualStudio.Telemetry.csproj" />
-    <ProjectReference Include="..\Coding4Fun.VisualStudio.TextTemplating.Interfaces\Coding4Fun.VisualStudio.TextTemplating.Interfaces.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Coding4Fun.VisualStudio.Telemetry\Coding4Fun.VisualStudio.Telemetry.csproj" />
+		<ProjectReference Include="..\Coding4Fun.VisualStudio.TextTemplating.Interfaces\Coding4Fun.VisualStudio.TextTemplating.Interfaces.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
 
 </Project>
